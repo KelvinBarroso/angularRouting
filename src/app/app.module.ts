@@ -16,7 +16,9 @@ import { RouterModule, Routes } from '@angular/router';
 const appRoutes: Routes =[
   { path: '', component: HomeComponent },
   { path: 'users', component: UsersComponent },
-  { path: 'servers', component: ServersComponent },//home path localhost:4200/users
+  { path: 'users/:id/:name', component: UserComponent },
+  { path: 'servers', component: ServersComponent },
+  { path: 'servers/:id/edit', component: EditServerComponent },//home path localhost:4200/users
 ];
 @NgModule({
   declarations: [
